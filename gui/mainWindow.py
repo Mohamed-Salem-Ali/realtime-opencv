@@ -95,7 +95,7 @@ class MainWindow(QtGui.QMainWindow):
 
 
    def showDialogAbout(self):
-      print "aki"
+      print ("aki")
       self.showDialog("ABOUT","Designed by: \n\nMIGUEL ANGEL VALERO RIVERO and GABRIEL GARRIDO CALVO \n\n\tComputer Vision 2010-11\n\n\t    Hamburg University")
 
    def showColorDialog(self):
@@ -171,7 +171,7 @@ class MainWindow(QtGui.QMainWindow):
 
    def disableColorButton(self):
       
-      print self.ui.backgroundAlgorithm_comboBox.currentIndex()
+      print(self.ui.backgroundAlgorithm_comboBox.currentIndex())
       if self.ui.backgroundAlgorithm_comboBox.currentIndex() == 2:
          self.ui.backgroundColor_pushButton.setDisabled(True)
          self.ui.backgroundColor_pushButton.setStyleSheet("QWidget { background-color: transparent }")

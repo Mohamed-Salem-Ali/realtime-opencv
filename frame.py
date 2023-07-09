@@ -25,7 +25,7 @@ except:
    try:
       import cv
    except:
-      print "ERROR: This program works only on LINUX or MAC. Version 2.6.0 OPENCV"
+      print ("ERROR: This program works only on LINUX or MAC. Version 2.6.0 OPENCV")
 
 import math
 
