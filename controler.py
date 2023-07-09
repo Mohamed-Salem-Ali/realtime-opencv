@@ -176,7 +176,7 @@ class Controler:
          self.__frames[indexWin] = None
          return "ERROR: THE BACKGROUND FILE WAS IMPOSSIBLE TO OPEN"
       
-      print "TYPE" + str(typeDetectBG)
+      print ("TYPE" + str(typeDetectBG))
       if vi.typeFormat == TypeMedia.VIDEO:
          lastImage = [vi.getFrame(0).getImage()]
          def displayVI_ReplaceBG_sub():

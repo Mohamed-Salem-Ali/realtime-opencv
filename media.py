@@ -63,7 +63,7 @@ class Media:
          self.__capture = CAM.requestCAM()
          self.typeFormat = TypeMedia.CAM
          if cv.GetCaptureProperty(self.__capture,cv.CV_CAP_PROP_FRAME_WIDTH) == 0.0:
-            print "ERROR: THE WEBCAM COULD NOT BE INITIALIZED"
+            print ("ERROR: THE WEBCAM COULD NOT BE INITIALIZED")
       else:
          self.__capture = cv.CreateFileCapture(path)
       
@@ -85,12 +85,12 @@ class Media:
          @return: It is retorned the image which is located in the selected frame
       """
       if n > self.nFrames:
-         print "ERROR : Frame Number excess"
+         print ("ERROR : Frame Number excess")
          return None
       
       for i in range (n):
          if cv.GrabFrame(self.__capture) == -1:
-            print "ERROR : Frame Number excess"
+            print ("ERROR : Frame Number excess")
             break;
       
       image = cv.QueryFrame(self.__capture)
